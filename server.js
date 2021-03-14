@@ -3,12 +3,12 @@ var express = require("express");
 var app = express();
 var db = require("./database.js");
 var md5 = require("md5");
-
+const cors = require("cors")
 var bodyParser = require("body-parser");
 
 var swaggerUi = require("swagger-ui-express"),
   swaggerDocument = require("./swagger.json");
-
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Server port
@@ -60,6 +60,7 @@ app.get("/user/:id", (req, res, next) => {
 
 // create user
 app.post("/addUser/", (req, res, next) => {
+  console.log("req",req.body)
   var errors = [];
   if (!req.body.password) {
     errors.push("No password specified");

@@ -1,0 +1,5 @@
+export const Types = {
+    ADD_USER: 'ADD_USER',
+    UPDATE_USER: 'UPDATE_USER',
+    FORM_SUBMITION_STATUS: 'FORM_SUBMITION_STATUS'
+  }

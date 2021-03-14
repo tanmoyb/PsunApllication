@@ -1,10 +1,10 @@
 import React from "react";
-import LandingPage from "./Components/Containers/LandingPage";
+import UserRegistration from "./components/UserRegistration";
 
 const App = () => {
   return (
     <div>
-      <LandingPage></LandingPage>
+      <UserRegistration></UserRegistration>
     </div>
   );
 };

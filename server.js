@@ -60,7 +60,6 @@ app.get("/user/:id", (req, res, next) => {
 
 // create user
 app.post("/addUser/", (req, res, next) => {
-  console.log("req",req.body)
   var errors = [];
   if (!req.body.password) {
     errors.push("No password specified");

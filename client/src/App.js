@@ -1,10 +1,10 @@
 import React from "react";
-import UserRegistration from "./components/UserRegistration";
+import AdminPage from "./components/AdminPage";
 
 const App = () => {
   return (
     <div>
-      <UserRegistration></UserRegistration>
+      <AdminPage></AdminPage>
     </div>
   );
 };

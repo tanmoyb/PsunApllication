@@ -195,7 +195,7 @@ export class AdminPage extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  return {action
+  return {
     profile: state.user.profile,
   };
 };
